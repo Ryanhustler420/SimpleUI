@@ -1,6 +1,7 @@
 package com.example.crap;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
@@ -55,6 +56,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             }case R.id.about: {
                 Toast.makeText(getApplicationContext(), "About", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(MainActivity.this, About.class));
+                overridePendingTransition(R.anim.enter, R.anim.exit);
                 break;
             }case R.id.logout: {
                 Toast.makeText(getApplicationContext(), "Logout", Toast.LENGTH_LONG).show();
@@ -62,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
         }
         //close navigation drawer
-        mDrawer.closeDrawer(Gravity.START);
+//        mDrawer.closeDrawer(Gravity.START);
         return true;
     }
 
