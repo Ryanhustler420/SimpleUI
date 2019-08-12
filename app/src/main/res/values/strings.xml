@@ -2,4 +2,6 @@
     <string name="app_name">Crap</string>
     <string name="hey_gaurav">Hey Gaurav!</string>
     <string name="jamshedpur">Jamshedpur</string>
+    <string name="about">About</string>
+    <string name="loop_card">Loop Card</string>
 </resources>

@@ -25,8 +25,8 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="25dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/iconSize"
+            android:layout_height="@dimen/iconSize"
             android:layout_gravity="center_vertical|center_horizontal"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
@@ -37,7 +37,7 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:fontFamily="sans-serif-thin"
             android:gravity="center_vertical"
@@ -50,11 +50,11 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="end"
+            android:layout_width="@dimen/iconSize"
+            android:layout_height="@dimen/iconSize"
+            android:layout_gravity="center_vertical"
             android:src="@drawable/my"
-            app:civ_border_color="#ccc"
+            app:civ_border_color="#00ff00"
             app:civ_border_width="2dp" />
 
     </LinearLayout>
@@ -78,12 +78,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_marginTop="30dp"
-                android:textSize="25sp"
+                android:layout_marginTop="@dimen/iconSize"
+                android:textSize="@dimen/mediumText"
                 android:gravity="center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Loop Card(s)" />
+                android:text="@string/loop_card" />
 
         </LinearLayout>
 

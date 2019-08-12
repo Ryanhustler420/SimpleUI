@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="iconSize">32dp</dimen>
+    <dimen name="smallText">18sp</dimen>
+    <dimen name="mediumText">24sp</dimen>
+    <dimen name="largeText">30sp</dimen>
+</resources>
