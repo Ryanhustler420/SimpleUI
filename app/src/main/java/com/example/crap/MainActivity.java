@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(getApplicationContext(), "Payment Details", Toast.LENGTH_LONG).show();
                 break;
             }case R.id.about: {
-                Toast.makeText(getApplicationContext(), "About", Toast.LENGTH_LONG).show();
                 startActivity(new Intent(MainActivity.this, About.class));
                 overridePendingTransition(R.anim.enter, R.anim.exit);
                 break;
