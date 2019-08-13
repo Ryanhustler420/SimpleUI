@@ -13,10 +13,12 @@
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:textColor="@android:color/black"
-        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
         android:layout_marginBottom="12dp"
         android:fontFamily="sans-serif-thin"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:paddingStart="10dp"
+        tools:ignore="RtlSymmetry" />
 
     <LinearLayout
         android:layout_marginTop="30dp"
@@ -58,7 +60,7 @@
             android:layout_height="65dp"
             android:src="@drawable/my"
             app:civ_border_width="2dp"
-            app:civ_border_color="#00ff00"/>
+            app:civ_border_color="#0000ff"/>
     </LinearLayout>
 
 </LinearLayout>
