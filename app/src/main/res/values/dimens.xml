@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="iconSize">32dp</dimen>
+    <dimen name="iconSize">30dp</dimen>
     <dimen name="smallText">18sp</dimen>
     <dimen name="mediumText">24sp</dimen>
     <dimen name="largeText">30sp</dimen>
@@ -13,7 +13,7 @@
     <dimen name="detail_backdrop_height">250dp</dimen>
     <dimen name="backdrop_title">30dp</dimen>
     <dimen name="backdrop_subtitle">18dp</dimen>
-    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
     <dimen name="card_album_radius">10dp</dimen>
     <dimen name="album_cover_height">160dp</dimen>
     <dimen name="album_title_padding">10dp</dimen>

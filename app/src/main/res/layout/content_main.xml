@@ -54,7 +54,7 @@
             android:layout_height="@dimen/iconSize"
             android:layout_gravity="center_vertical"
             android:src="@drawable/my"
-            app:civ_border_color="#0000ff"
+            app:civ_border_color="#fff"
             app:civ_border_width="2dp" />
 
     </LinearLayout>

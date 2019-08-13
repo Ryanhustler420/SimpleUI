@@ -60,7 +60,7 @@
             android:layout_height="65dp"
             android:src="@drawable/my"
             app:civ_border_width="2dp"
-            app:civ_border_color="#0000ff"/>
+            app:civ_border_color="#fff"/>
     </LinearLayout>
 
 </LinearLayout>
