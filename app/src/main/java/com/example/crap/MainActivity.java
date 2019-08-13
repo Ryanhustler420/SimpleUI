@@ -2,6 +2,7 @@ package com.example.crap;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
@@ -20,6 +21,8 @@ import android.widget.Toast;
 import com.example.crap.adaptor.DestinationListAdaptor;
 import com.example.crap.store.DestinationCollection;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+import io.github.douglasjunior.androidSimpleTooltip.SimpleTooltip;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     StaggeredGridLayoutManager staggeredGridLayoutManager;
     DestinationListAdaptor destinationListAdaptor;
     DestinationCollection destinationCollection;
+    CircleImageView circleImageView;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
@@ -62,6 +66,28 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(getApplicationContext(), "Looking For " +
                                 destinationCollection.getDestinations().get(position).getName(),
                                 Toast.LENGTH_LONG).show();
+            }
+        });
+
+        circleImageView = findViewById(R.id.profile_image);
+
+
+        circleImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String[] punches = {"Ah! please stop tapping me", "Please, it's Paining", "Hope it's you Gaurav", "I am just an Avatar"};
+                new SimpleTooltip.Builder(getApplicationContext())
+                        .anchorView(view)
+                        .textColor(Color.WHITE)
+                        .text(punches[(int) (Math.random() * punches.length)])
+                        .gravity(Gravity.START)
+                        .dismissOnOutsideTouch(true)
+                        .dismissOnInsideTouch(true)
+                        .transparentOverlay(true)
+                        .modal(true)
+                        .focusable(true)
+                        .build()
+                        .show();
             }
         });
     }
