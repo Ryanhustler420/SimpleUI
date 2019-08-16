@@ -2,23 +2,28 @@ package com.example.crap.utils;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.example.crap.MainActivity;
 import com.example.crap.R;
 
 public class SplashScreen extends Activity {
 
-    static int splashTimeout = 2000;
+    static int splashTimeout = 1500;
     static Handler handler;
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+
+        // make the activity on fullScreen
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN
+                , WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
 
