@@ -82,7 +82,7 @@ public class IntoActivity extends AppCompatActivity {
         screenPager.setAdapter(introViewPagerAdaptor);
 
         // setup tab layout with viewpager
-        tabIndicator.setupWithViewPager(screenPager);
+         tabIndicator.setupWithViewPager(screenPager);
 
         // next button click Listener
         btnNext.setOnClickListener(new View.OnClickListener() {
