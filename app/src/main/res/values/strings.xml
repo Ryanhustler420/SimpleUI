@@ -4,4 +4,12 @@
     <string name="jamshedpur">Jamshedpur</string>
     <string name="about">About</string>
     <string name="loop_card">Loop Card</string>
+    <string name="version_1_0">Version: 1.0</string>
+    <string name="release_stable">Release: stable</string>
+    <string name="goal">Goal</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</string>
+    <string name="contact_us">Contact Us:</string>
+    <string name="email_support">Email: support@appname.com</string>
+    <string name="address">HQ address: Saket, Delhi, India</string>
+    <string name="support_email">Email: support@appname.com</string>
 </resources>
