@@ -13,7 +13,7 @@
         android:layout_height="100dp"
         android:background="@color/white"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_stats_graphic_zig_zag_line"
+        android:src="@drawable/zig_zag"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
