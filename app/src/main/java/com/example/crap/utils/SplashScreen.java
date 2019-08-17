@@ -37,8 +37,8 @@ public class SplashScreen extends Activity {
     }
 
     private boolean restorePrefData() {
-        SharedPreferences preferences = getApplicationContext().getSharedPreferences(Constants.APP_NAME, MODE_PRIVATE);
-        return preferences.getBoolean(Constants.PREF_BOOL_INTRO, false);
+        SharedPreferences preferences = getApplicationContext().getSharedPreferences("crap", MODE_PRIVATE);
+        return preferences.getBoolean("isIntroCheckedByUser", false);
     }
 
     private Runnable timer = new Runnable() {

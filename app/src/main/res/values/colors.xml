@@ -7,9 +7,9 @@
     <color name="colorAccent">@color/white</color>
 
     <!--For tooltips-->
-    <color name="simpletooltip_background">@color/colorAccent</color>
-    <color name="simpletooltip_text">@color/black</color>
-    <color name="simpletooltip_arrow">@color/colorAccent</color>
+    <color name="simpletooltip_background">@color/black</color>
+    <color name="simpletooltip_text">@color/white</color>
+    <color name="simpletooltip_arrow">@color/black</color>
 
     <!-- colors for button style -->
     <color name="gradient_start_color">#4c84ff</color>

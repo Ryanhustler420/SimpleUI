@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     DestinationListAdaptor destinationListAdaptor;
     DestinationCollection destinationCollection;
     CircleImageView circleImageView;
+    boolean isAboutToMoveAnotherActivity = false;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
@@ -93,6 +94,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        isAboutToMoveAnotherActivity = false;
+    }
+
+    @Override
     public void onBackPressed() {
         if(mDrawer.isDrawerOpen(Gravity.START)) {
             mDrawer.closeDrawer(Gravity.START);
@@ -109,22 +116,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         // Handle navigation view item clicks here.
-        switch (item.getItemId()) {
-            case R.id.settings: {
-                Toast.makeText(getApplicationContext(), "Setting", Toast.LENGTH_LONG).show();
-                break;
-            }case R.id.payments_details: {
-                Toast.makeText(getApplicationContext(), "Payment Details", Toast.LENGTH_LONG).show();
-                break;
-            }case R.id.about: {
-                startActivity(new Intent(MainActivity.this, About.class));
-                overridePendingTransition(R.anim.enter, R.anim.exit);
-                break;
-            }case R.id.logout: {
-                Toast.makeText(getApplicationContext(), "Logout", Toast.LENGTH_LONG).show();
-                break;
+        if(!isAboutToMoveAnotherActivity){
+            switch (item.getItemId()) {
+                case R.id.settings: {
+                    Toast.makeText(getApplicationContext(), "Setting", Toast.LENGTH_LONG).show();
+                    break;
+                }case R.id.payments_details: {
+                    Toast.makeText(getApplicationContext(), "Payment Details", Toast.LENGTH_LONG).show();
+                    break;
+                }case R.id.about: {
+                    startActivity(new Intent(MainActivity.this, About.class));
+                    overridePendingTransition(R.anim.enter, R.anim.exit);
+                    break;
+                }case R.id.logout: {
+                    Toast.makeText(getApplicationContext(), "Logout", Toast.LENGTH_LONG).show();
+                    break;
+                }
             }
         }
+        isAboutToMoveAnotherActivity = true;
         //close navigation drawer
 //        mDrawer.closeDrawer(Gravity.START);
         return true;

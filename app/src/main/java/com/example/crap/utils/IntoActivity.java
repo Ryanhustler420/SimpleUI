@@ -136,6 +136,8 @@ public class IntoActivity extends AppCompatActivity {
                 // open main activity
                 Intent mainActivity = new Intent(IntoActivity.this, MainActivity.class);
                 startActivity(mainActivity);
+                // preventing user to click this button twice
+                btnGetStarted.setEnabled(false);
 
                 // also we need to save a boolean value to storage for
                 // later time check when will know that he/she is already checked the
@@ -150,8 +152,8 @@ public class IntoActivity extends AppCompatActivity {
     }
 
     private boolean restorePrefData() {
-        SharedPreferences preferences = getApplicationContext().getSharedPreferences(Constants.APP_NAME, MODE_PRIVATE);
-        return preferences.getBoolean(Constants.PREF_BOOL_INTRO, false);
+        SharedPreferences preferences = getApplicationContext().getSharedPreferences("crap", MODE_PRIVATE);
+        return preferences.getBoolean("isIntroCheckedByUser", false);
     }
 
     private void savePrefData() {
