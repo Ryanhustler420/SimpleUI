@@ -13,7 +13,7 @@
 
         <activity android:name=".About"></activity>
         <activity android:name=".MainActivity"></activity>
-
+        <activity android:name=".utils.IntoActivity"></activity>
         <activity
             android:name=".utils.SplashScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">

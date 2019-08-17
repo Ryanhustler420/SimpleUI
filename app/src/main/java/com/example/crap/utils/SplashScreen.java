@@ -2,6 +2,7 @@ package com.example.crap.utils;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
@@ -24,11 +25,20 @@ public class SplashScreen extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN
                 , WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+        if(!restorePrefData()) {
+            startActivity(new Intent(getApplicationContext(), IntoActivity.class));
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
 
         handler = new Handler();
         handler.postDelayed(timer, splashTimeout);
+    }
+
+    private boolean restorePrefData() {
+        SharedPreferences preferences = getApplicationContext().getSharedPreferences(Constants.APP_NAME, MODE_PRIVATE);
+        return preferences.getBoolean(Constants.PREF_BOOL_INTRO, false);
     }
 
     private Runnable timer = new Runnable() {

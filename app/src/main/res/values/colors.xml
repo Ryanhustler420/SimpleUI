@@ -4,10 +4,19 @@
     <color name="black">#000</color>
     <color name="colorPrimary">@color/white</color>
     <color name="colorPrimaryDark">@color/white</color>
-    <color name="colorAccent">@color/black</color>
+    <color name="colorAccent">@color/white</color>
 
     <!--For tooltips-->
     <color name="simpletooltip_background">@color/colorAccent</color>
-    <color name="simpletooltip_text">@android:color/primary_text_light</color>
+    <color name="simpletooltip_text">@color/black</color>
     <color name="simpletooltip_arrow">@color/colorAccent</color>
+
+    <!-- colors for button style -->
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+    <!-- colors for tab and screen text -->
+    <color name="tab_indicator_grey">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
 </resources>
