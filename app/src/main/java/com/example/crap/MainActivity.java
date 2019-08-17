@@ -4,10 +4,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     DestinationListAdaptor destinationListAdaptor;
     DestinationCollection destinationCollection;
     CircleImageView circleImageView;
+    SwipeRefreshLayout pullToRefresh;
     boolean isAboutToMoveAnotherActivity = false;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -91,6 +94,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         .show();
             }
         });
+
+        pullToRefresh = findViewById(R.id.loopCard_pullToRefresh);
+        pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                Toast.makeText(getApplicationContext(), "Fetching Again", Toast.LENGTH_SHORT).show();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        pullToRefresh.setRefreshing(false);
+                    }
+                }, 2000);
+            }
+        });
+
     }
 
     @Override
