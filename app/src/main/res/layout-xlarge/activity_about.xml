@@ -105,7 +105,7 @@
                 android:id="@+id/address1"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
-                android:gravity="left"
+                android:gravity="start"
                 android:lines="2"
                 android:maxLines="9"
                 android:text="@string/lorem"

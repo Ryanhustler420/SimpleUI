@@ -38,8 +38,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/screen_pager"
-        tools:targetApi="m"
-        />
+        tools:ignore="RtlHardcoded" />
 
     <android.support.design.widget.TabLayout
         android:id="@+id/tab_indicator"
@@ -52,7 +51,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/screen_pager"
-        app:tabBackground="@drawable/indicator_selector">
+        app:tabBackground="@drawable/indicator_selector"
+        tools:ignore="RtlHardcoded">
 
     </android.support.design.widget.TabLayout>
 

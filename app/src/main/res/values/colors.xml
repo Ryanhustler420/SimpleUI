@@ -19,4 +19,7 @@
     <color name="tab_indicator_grey">#c0c0c0</color>
     <color name="intro_title_color">#000000</color>
     <color name="intro_description_color">#656565</color>
+
+    <!-- Into Activity -->
+    <color name="into_btn_background_color">@color/white</color>
 </resources>
