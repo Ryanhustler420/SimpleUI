@@ -95,47 +95,47 @@
             <!-- dimes here for small wearable gadget device -->
 
         <!-- Normal Port Pixel 2 -->
-            <dimen name="viewPager_content_normal_layout_constraintGuide_begin_PORT">400dp</dimen>
+            <dimen name="viewPager_content_normal_layout_constraintGuide_begin_PORT">350dp</dimen>
 
             <dimen name="viewPager_content_normal_first_textView_margin_PORT">16dp</dimen>
 
             <dimen name="viewPager_content_normal_second_textView_margin_PORT">32dp</dimen>
-            <dimen name="viewPager_content_normal_second_textView_TopMargin_PORT">20dp</dimen>
+            <dimen name="viewPager_content_normal_second_textView_TopMargin_PORT">18dp</dimen>
             <dimen name="viewPager_content_normal_second_textView_lineSpacingExtras_PORT">8dp</dimen>
 
             <dimen name="viewPager_content_normal_imageView_margin_PORT">20dp</dimen>
             <dimen name="viewPager_content_normal_imageView_BottomMargin_PORT">20dp</dimen>
-            <dimen name="viewPager_content_normal_imageView_width_PORT">150dp</dimen>
-            <dimen name="viewPager_content_normal_imageView_height_PORT">150dp</dimen>
+            <dimen name="viewPager_content_normal_imageView_width_PORT">100dp</dimen>
+            <dimen name="viewPager_content_normal_imageView_height_PORT">100dp</dimen>
 
         <!-- Normal Land Pixel 2 -->
-            <dimen name="viewPager_content_normal_layout_constraintGuide_begin_LAND">200dp</dimen>
+            <dimen name="viewPager_content_normal_layout_constraintGuide_begin_LAND">170dp</dimen>
 
             <dimen name="viewPager_content_normal_first_textView_margin_LAND">16dp</dimen>
 
-            <dimen name="viewPager_content_normal_second_textView_margin_LAND">20dp</dimen>
-            <dimen name="viewPager_content_normal_second_textView_TopMargin_LAND">20dp</dimen>
+            <dimen name="viewPager_content_normal_second_textView_margin_LAND">32dp</dimen>
+            <dimen name="viewPager_content_normal_second_textView_TopMargin_LAND">18dp</dimen>
             <dimen name="viewPager_content_normal_second_textView_lineSpacingExtras_LAND">8dp</dimen>
 
             <dimen name="viewPager_content_normal_imageView_margin_LAND">20dp</dimen>
             <dimen name="viewPager_content_normal_imageView_BottomMargin_LAND">20dp</dimen>
-            <dimen name="viewPager_content_normal_imageView_width_LAND">150dp</dimen>
-            <dimen name="viewPager_content_normal_imageView_height_LAND">150dp</dimen>
+            <dimen name="viewPager_content_normal_imageView_width_LAND">120dp</dimen>
+            <dimen name="viewPager_content_normal_imageView_height_LAND">120dp</dimen>
 
 
         <!-- Large Port Pixel 2 -->
             <dimen name="viewPager_content_large_layout_constraintGuide_begin_PORT">500dp</dimen>
 
-            <dimen name="viewPager_content_large_first_textView_margin_PORT">36dp</dimen>
+            <dimen name="viewPager_content_large_first_textView_margin_PORT">16dp</dimen>
 
-            <dimen name="viewPager_content_large_second_textView_margin_PORT">52dp</dimen>
-            <dimen name="viewPager_content_large_second_textView_TopMargin_PORT">40dp</dimen>
-            <dimen name="viewPager_content_large_second_textView_lineSpacingExtras_PORT">18dp</dimen>
+            <dimen name="viewPager_content_large_second_textView_margin_PORT">32dp</dimen>
+            <dimen name="viewPager_content_large_second_textView_TopMargin_PORT">32dp</dimen>
+            <dimen name="viewPager_content_large_second_textView_lineSpacingExtras_PORT">8dp</dimen>
 
-            <dimen name="viewPager_content_large_imageView_margin_PORT">40dp</dimen>
-            <dimen name="viewPager_content_large_imageView_BottomMargin_PORT">40dp</dimen>
-            <dimen name="viewPager_content_large_imageView_width_PORT">300dp</dimen>
-            <dimen name="viewPager_content_large_imageView_height_PORT">300dp</dimen>
+            <dimen name="viewPager_content_large_imageView_margin_PORT">32dp</dimen>
+            <dimen name="viewPager_content_large_imageView_BottomMargin_PORT">32dp</dimen>
+            <dimen name="viewPager_content_large_imageView_width_PORT">150dp</dimen>
+            <dimen name="viewPager_content_large_imageView_height_PORT">150dp</dimen>
 
         <!-- Large Land Pixel 2 -->
             <dimen name="viewPager_content_large_layout_constraintGuide_begin_LAND">300dp</dimen>
