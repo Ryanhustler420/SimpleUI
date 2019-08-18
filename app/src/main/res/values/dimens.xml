@@ -108,20 +108,6 @@
             <dimen name="viewPager_content_normal_imageView_width_PORT">100dp</dimen>
             <dimen name="viewPager_content_normal_imageView_height_PORT">100dp</dimen>
 
-        <!-- Normal Land Pixel 2 -->
-            <dimen name="viewPager_content_normal_layout_constraintGuide_begin_LAND">170dp</dimen>
-
-            <dimen name="viewPager_content_normal_first_textView_margin_LAND">16dp</dimen>
-
-            <dimen name="viewPager_content_normal_second_textView_margin_LAND">32dp</dimen>
-            <dimen name="viewPager_content_normal_second_textView_TopMargin_LAND">18dp</dimen>
-            <dimen name="viewPager_content_normal_second_textView_lineSpacingExtras_LAND">8dp</dimen>
-
-            <dimen name="viewPager_content_normal_imageView_margin_LAND">20dp</dimen>
-            <dimen name="viewPager_content_normal_imageView_BottomMargin_LAND">20dp</dimen>
-            <dimen name="viewPager_content_normal_imageView_width_LAND">120dp</dimen>
-            <dimen name="viewPager_content_normal_imageView_height_LAND">120dp</dimen>
-
 
         <!-- Large Port Pixel 2 -->
             <dimen name="viewPager_content_large_layout_constraintGuide_begin_PORT">500dp</dimen>
@@ -136,20 +122,6 @@
             <dimen name="viewPager_content_large_imageView_BottomMargin_PORT">32dp</dimen>
             <dimen name="viewPager_content_large_imageView_width_PORT">150dp</dimen>
             <dimen name="viewPager_content_large_imageView_height_PORT">150dp</dimen>
-
-        <!-- Large Land Pixel 2 -->
-            <dimen name="viewPager_content_large_layout_constraintGuide_begin_LAND">300dp</dimen>
-
-            <dimen name="viewPager_content_large_first_textView_margin_LAND">28dp</dimen>
-
-            <dimen name="viewPager_content_large_second_textView_margin_LAND">24dp</dimen>
-            <dimen name="viewPager_content_large_second_textView_TopMargin_LAND">32dp</dimen>
-            <dimen name="viewPager_content_large_second_textView_lineSpacingExtras_LAND">10dp</dimen>
-
-            <dimen name="viewPager_content_large_imageView_margin_LAND">40dp</dimen>
-            <dimen name="viewPager_content_large_imageView_BottomMargin_LAND">40dp</dimen>
-            <dimen name="viewPager_content_large_imageView_width_LAND">300dp</dimen>
-            <dimen name="viewPager_content_large_imageView_height_LAND">300dp</dimen>
 
 
         <!-- XLarge Port Pixel 2 -->
@@ -166,19 +138,6 @@
             <dimen name="viewPager_content_Xlarge_imageView_width_PORT">400dp</dimen>
             <dimen name="viewPager_content_Xlarge_imageView_height_PORT">400dp</dimen>
 
-        <!-- XLarge Land Pixel 2 -->
-            <dimen name="viewPager_content_Xlarge_layout_constraintGuide_begin_LAND">400dp</dimen>
-
-            <dimen name="viewPager_content_Xlarge_first_textView_margin_LAND">12dp</dimen>
-
-            <dimen name="viewPager_content_Xlarge_second_textView_margin_LAND">30dp</dimen>
-            <dimen name="viewPager_content_Xlarge_second_textView_TopMargin_LAND">35dp</dimen>
-            <dimen name="viewPager_content_Xlarge_second_textView_lineSpacingExtras_LAND">10dp</dimen>
-
-            <dimen name="viewPager_content_Xlarge_imageView_margin_LAND">40dp</dimen>
-            <dimen name="viewPager_content_Xlarge_imageView_BottomMargin_LAND">40dp</dimen>
-            <dimen name="viewPager_content_Xlarge_imageView_width_LAND">350dp</dimen>
-            <dimen name="viewPager_content_Xlarge_imageView_height_LAND">350dp</dimen>
 
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
