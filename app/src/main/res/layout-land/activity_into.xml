@@ -62,13 +62,14 @@
         android:layout_marginLeft="@dimen/into_normal_button_layout_margin"
         android:layout_marginEnd="@dimen/into_normal_button_layout_margin"
         android:layout_marginRight="@dimen/into_normal_button_layout_margin"
-        android:layout_marginBottom="@dimen/into_normal_getStarted_button_layout_marginBottom"
+        android:layout_marginBottom="52dp"
         android:background="@drawable/btn_gradient_style"
         android:text="@string/get_started"
         android:textColor="@color/white"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
