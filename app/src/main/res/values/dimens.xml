@@ -6,10 +6,11 @@
     <dimen name="avatar_image_border_medium">3dp</dimen>
     <dimen name="avatar_image_border_larger">5dp</dimen>
 
-    <dimen name="iconSize">30dp</dimen>
     <dimen name="smallText">18sp</dimen>
     <dimen name="mediumText">24sp</dimen>
     <dimen name="largeText">30sp</dimen>
+    <dimen name="UltraText">40sp</dimen>
+    <dimen name="UltraGodText">50sp</dimen>
 
 
     <!-- format = activity + display_size + component + property + <- direction | optional -> -->
@@ -66,6 +67,25 @@
             <dimen name="into_Xlarge_viewPager_layout_width">0dp</dimen>
             <dimen name="into_Xlarge_button_layout_margin">32dp</dimen>
             <dimen name="into_Xlarge_getStarted_button_layout_marginBottom">88dp</dimen>
+
+    <!-- Splash -->
+        <!-- Small 2.7" Port Land Q_B_G_A -->
+            <!-- dimes here for small wearable gadget device -->
+
+        <!-- Normal Port Land Pixel 2 -->
+            <dimen name="splash_normal_imageView_height">100dp</dimen>
+            <dimen name="splash_normal_imageView_width">100dp</dimen>
+            <dimen name="splash_normal_textView_margin">8dp</dimen>
+
+        <!-- Large Port Land Nexus 7 -->
+            <dimen name="splash_large_imageView_height">130dp</dimen>
+            <dimen name="splash_large_imageView_width">130dp</dimen>
+            <dimen name="splash_large_textView_margin">8dp</dimen>
+
+        <!-- XLarge Port Land Nexus 10 -->
+            <dimen name="splash_Xlarge_imageView_height">160dp</dimen>
+            <dimen name="splash_Xlarge_imageView_width">160dp</dimen>
+            <dimen name="splash_Xlarge_textView_margin">8dp</dimen>
 
 
     <!-- Default screen margins, per the Android Design guidelines. -->
