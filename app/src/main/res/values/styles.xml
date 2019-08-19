@@ -8,10 +8,4 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="simpletooltip_default" parent="@android:style/TextAppearance.Medium">#000</style>
-
-    <style name="NavDrawerTextStyle" parent="Base.TextAppearance.AppCompat">
-        <item name="android:textColor">@color/colorPrimaryDark</item>
-        <item name="android:textSize">@dimen/smallText</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
 </resources>
