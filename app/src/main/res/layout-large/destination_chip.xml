@@ -23,22 +23,23 @@
                 android:id="@+id/destination_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/destination_chip_normal_layout_album_title_padding"
-                android:paddingRight="@dimen/destination_chip_normal_layout_album_title_padding"
-                android:paddingTop="@dimen/destination_chip_normal_layout_album_title_padding"
+                android:paddingLeft="@dimen/destination_chip_large_layout_album_title_padding"
+                android:paddingRight="@dimen/destination_chip_large_layout_album_title_padding"
+                android:paddingTop="@dimen/destination_chip_large_layout_album_title_padding"
                 android:textColor="@color/black"
-                android:textSize="@dimen/smallText"
+                android:textSize="@dimen/mediumText"
                 android:text="@string/app_name"
                 tools:ignore="SpUsage" />
 
             <TextView
+                android:textSize="@dimen/smallText"
                 android:id="@+id/destination_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/destination_name"
-                android:paddingBottom="@dimen/destination_chip_normal_layout_album_title_padding"
-                android:paddingLeft="@dimen/destination_chip_normal_layout_album_title_padding"
-                android:paddingRight="@dimen/destination_chip_normal_layout_album_title_padding"
+                android:paddingBottom="@dimen/destination_chip_large_layout_album_title_padding"
+                android:paddingLeft="@dimen/destination_chip_large_layout_album_title_padding"
+                android:paddingRight="@dimen/destination_chip_large_layout_album_title_padding"
                 android:text="@string/app_name"
                 android:textStyle="bold" />
 

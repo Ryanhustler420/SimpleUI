@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:textSize="@dimen/largeText"
+        android:textSize="@dimen/mediumText"
         android:id="@+id/intro_description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

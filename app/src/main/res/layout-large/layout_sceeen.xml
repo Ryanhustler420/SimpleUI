@@ -12,8 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin=
-            "@dimen/viewPager_content_large_layout_constraintGuide_begin_PORT" />
+        app:layout_constraintGuide_end="460dp" />
 
     <TextView
         android:id="@+id/intro_title"
@@ -36,7 +35,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:textSize="@dimen/mediumText"
+        android:textSize="@dimen/smallText"
         android:id="@+id/intro_description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
