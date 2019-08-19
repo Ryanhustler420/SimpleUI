@@ -30,21 +30,21 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="@dimen/content_main_normal_toolbar_paddingLeft"
-            android:layout_marginLeft="@dimen/content_main_normal_toolbar_paddingLeft"
-            android:layout_marginEnd="@dimen/content_main_normal_toolbar_paddingRight"
-            android:layout_marginRight="@dimen/content_main_normal_toolbar_paddingRight"
+            android:layout_marginStart="@dimen/content_main_large_toolbar_paddingLeft"
+            android:layout_marginLeft="@dimen/content_main_large_toolbar_paddingLeft"
+            android:layout_marginEnd="@dimen/content_main_large_toolbar_paddingRight"
+            android:layout_marginRight="@dimen/content_main_large_toolbar_paddingRight"
             tools:ignore="UselessParent">
 
             <Button
                 android:id="@+id/button"
-                android:layout_width="@dimen/content_main_normal_toolbar_iconSize"
-                android:layout_height="@dimen/content_main_normal_toolbar_iconSize"
+                android:layout_width="@dimen/content_main_large_toolbar_iconSize"
+                android:layout_height="@dimen/content_main_large_toolbar_iconSize"
                 android:layout_gravity="center_vertical|center_horizontal"
-                android:layout_marginStart="@dimen/content_main_normal_toolbar_button_padding"
-                android:layout_marginLeft="@dimen/content_main_normal_toolbar_button_padding"
-                android:layout_marginEnd="@dimen/content_main_normal_toolbar_button_padding"
-                android:layout_marginRight="@dimen/content_main_normal_toolbar_button_padding"
+                android:layout_marginStart="@dimen/content_main_large_toolbar_button_padding"
+                android:layout_marginLeft="@dimen/content_main_large_toolbar_button_padding"
+                android:layout_marginEnd="@dimen/content_main_large_toolbar_button_padding"
+                android:layout_marginRight="@dimen/content_main_large_toolbar_button_padding"
                 android:background="@drawable/ic_menu"
                 android:gravity="center_horizontal|center_vertical" />
 
@@ -56,21 +56,21 @@
                 android:gravity="center_vertical"
                 android:text="@string/app_name"
                 android:textColor="@color/black"
-                android:textSize="@dimen/mediumText"
+                android:textSize="@dimen/largeText"
                 tools:ignore="RtlSymmetry" />
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profile_image"
-                android:layout_width="@dimen/content_main_normal_toolbar_iconSize"
-                android:layout_height="@dimen/content_main_normal_toolbar_iconSize"
+                android:layout_width="@dimen/content_main_large_toolbar_iconSize"
+                android:layout_height="@dimen/content_main_large_toolbar_iconSize"
                 android:layout_gravity="center_vertical"
-                android:layout_marginStart="@dimen/content_main_normal_toolbar_paddingLeft"
-                android:layout_marginLeft="@dimen/content_main_normal_toolbar_paddingLeft"
-                android:layout_marginEnd="@dimen/content_main_normal_toolbar_paddingRight"
-                android:layout_marginRight="@dimen/content_main_normal_toolbar_paddingRight"
+                android:layout_marginStart="@dimen/content_main_large_toolbar_paddingLeft"
+                android:layout_marginLeft="@dimen/content_main_large_toolbar_paddingLeft"
+                android:layout_marginEnd="@dimen/content_main_large_toolbar_paddingRight"
+                android:layout_marginRight="@dimen/content_main_large_toolbar_paddingRight"
                 android:src="@drawable/my"
                 app:civ_border_color="@color/white"
-                app:civ_border_width="@dimen/avatar_image_border_small" />
+                app:civ_border_width="@dimen/avatar_image_border_medium" />
 
         </LinearLayout>
 
@@ -93,7 +93,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/loop_card"
-            android:textSize="@dimen/largeText" />
+            android:textSize="@dimen/UltraText" />
 
     </LinearLayout>
 
@@ -101,7 +101,7 @@
         android:layout_weight="8"
         android:layout_height="0dp"
         android:layout_width="match_parent"
-        android:padding="@dimen/content_main_normal_refresh_layout_padding"
+        android:padding="@dimen/content_main_large_refresh_layout_padding"
         android:id="@+id/loopCard_pullToRefresh"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

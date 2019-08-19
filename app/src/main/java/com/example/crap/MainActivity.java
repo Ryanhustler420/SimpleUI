@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         circleImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String[] punches = {"Ah! please stop tapping me", "Please, it's Paining", "Hope it's you Gaurav", "I am just an Avatar"};
+                String[] punches = {"Ah! please stop tapping me", "Please, it's paining", "Hope it's you Gaurav", "I am just an avatar"};
                 new SimpleTooltip.Builder(getApplicationContext())
                         .anchorView(view)
                         .textColor(Color.WHITE)
