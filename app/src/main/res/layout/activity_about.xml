@@ -43,15 +43,6 @@
             android:textSize="@dimen/mediumText"
             tools:ignore="RtlSymmetry" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profile_image"
-            android:layout_width="@dimen/about_normal_toolbar_icon_wh"
-            android:layout_height="@dimen/about_normal_toolbar_icon_wh"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/ic_dot"
-            app:civ_border_color="@color/black"
-            app:civ_border_width="@dimen/avatar_image_border_small" />
-
     </LinearLayout>
 
     <ScrollView

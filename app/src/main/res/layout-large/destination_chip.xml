@@ -29,9 +29,11 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/mediumText"
                 android:text="@string/app_name"
+                android:fontFamily="sans-serif"
                 tools:ignore="SpUsage" />
 
             <TextView
+                android:fontFamily="sans-serif"
                 android:textSize="@dimen/smallText"
                 android:id="@+id/destination_price"
                 android:layout_width="match_parent"

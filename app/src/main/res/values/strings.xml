@@ -14,4 +14,12 @@
     <string name="support_email">Email: support@appname.com</string>
     <string name="next_btn">Next</string>
     <string name="get_started">Get Started</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="payment_history">Payment History</string>
+    <string name="transaction_id_b56abczzc">Transaction ID: b56abczzc</string>
+    <string name="amount_99_inr">Amount: 99 INR</string>
+    <string name="last_payment">Last Payment</string>
+    <string name="_21st_july_2019">21st July 2019</string>
+    <string name="plan_gold">Plan: Gold</string>
+    <string name="valid_till_21st_aug_2019">Valid Till: 21st Aug 2019</string>
 </resources>

@@ -141,7 +141,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     isAboutToMoveAnotherActivity = false;
                     break;
                 }case R.id.payments_details: {
-                    Toast.makeText(getApplicationContext(), "Payment Details", Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(MainActivity.this, Payment_details.class));
+                    overridePendingTransition(R.anim.enter, R.anim.exit);
                     isAboutToMoveAnotherActivity = false;
                     break;
                 }case R.id.about: {
