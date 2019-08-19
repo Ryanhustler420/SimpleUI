@@ -17,7 +17,7 @@ public class FontChanger extends Application {
 
         // font overriding here for entire system
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("fonts/Raleway-Medium.ttf")
+                .setDefaultFontPath("fonts/Raleway-Light.ttf")
                 .setFontAttrId(R.attr.fontPath).build()
         );
     }

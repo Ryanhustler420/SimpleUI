@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/about_back_btn"
+            android:id="@+id/payments_details_back_btn"
             android:layout_width="@dimen/about_normal_toolbar_icon_wh"
             android:layout_height="@dimen/about_normal_toolbar_icon_wh"
             android:layout_gravity="center_vertical|center_horizontal"
