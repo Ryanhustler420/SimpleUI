@@ -138,21 +138,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             switch (item.getItemId()) {
                 case R.id.settings: {
                     Toast.makeText(getApplicationContext(), "Setting", Toast.LENGTH_LONG).show();
+                    isAboutToMoveAnotherActivity = false;
                     break;
                 }case R.id.payments_details: {
                     Toast.makeText(getApplicationContext(), "Payment Details", Toast.LENGTH_LONG).show();
+                    isAboutToMoveAnotherActivity = false;
                     break;
                 }case R.id.about: {
                     startActivity(new Intent(MainActivity.this, About.class));
                     overridePendingTransition(R.anim.enter, R.anim.exit);
+                    isAboutToMoveAnotherActivity = true;
                     break;
                 }case R.id.logout: {
                     Toast.makeText(getApplicationContext(), "Logout", Toast.LENGTH_LONG).show();
+                    isAboutToMoveAnotherActivity = false;
                     break;
                 }
             }
         }
-        isAboutToMoveAnotherActivity = true;
         //close navigation drawer
 //        mDrawer.closeDrawer(Gravity.START);
         return true;
