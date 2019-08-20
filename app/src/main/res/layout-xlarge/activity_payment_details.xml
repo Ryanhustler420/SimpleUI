@@ -12,24 +12,24 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/payment_details_normal_toolbar_height"
-        android:layout_marginTop="@dimen/payment_details_normal_toolbar_layout_margin"
-        android:layout_marginEnd="@dimen/payment_details_normal_toolbar_layout_margin"
-        android:layout_marginRight="@dimen/payment_details_normal_toolbar_layout_margin"
-        android:layout_marginBottom="@dimen/payment_details_normal_toolbar_layout_margin"
+        android:layout_height="@dimen/payment_details_Xlarge_toolbar_height"
+        android:layout_marginTop="@dimen/payment_details_Xlarge_toolbar_layout_margin"
+        android:layout_marginEnd="@dimen/payment_details_Xlarge_toolbar_layout_margin"
+        android:layout_marginRight="@dimen/payment_details_Xlarge_toolbar_layout_margin"
+        android:layout_marginBottom="@dimen/payment_details_Xlarge_toolbar_layout_margin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/payments_details_back_btn"
-            android:layout_width="@dimen/payment_details_normal_toolbar_layout_iconSize"
-            android:layout_height="@dimen/payment_details_normal_toolbar_layout_iconSize"
+            android:layout_width="@dimen/payment_details_Xlarge_toolbar_layout_iconSize"
+            android:layout_height="@dimen/payment_details_Xlarge_toolbar_layout_iconSize"
             android:layout_gravity="center_vertical|center_horizontal"
-            android:layout_marginStart="@dimen/payment_details_normal_toolbar_layout_icon_margin"
-            android:layout_marginLeft="@dimen/payment_details_normal_toolbar_layout_icon_margin"
-            android:layout_marginEnd="@dimen/payment_details_normal_toolbar_layout_icon_margin"
-            android:layout_marginRight="@dimen/payment_details_normal_toolbar_layout_icon_margin"
+            android:layout_marginStart="@dimen/payment_details_Xlarge_toolbar_layout_icon_margin"
+            android:layout_marginLeft="@dimen/payment_details_Xlarge_toolbar_layout_icon_margin"
+            android:layout_marginEnd="@dimen/payment_details_Xlarge_toolbar_layout_icon_margin"
+            android:layout_marginRight="@dimen/payment_details_Xlarge_toolbar_layout_icon_margin"
             android:background="@drawable/ic_back"
             android:gravity="center_horizontal|center_vertical" />
 
@@ -39,11 +39,11 @@
             android:layout_weight="1"
             android:fontFamily="sans-serif-thin"
             android:gravity="center_vertical"
-            android:paddingStart="@dimen/payment_details_normal_toolbar_layout_textView_paddingLeft"
-            android:paddingLeft="@dimen/payment_details_normal_toolbar_layout_textView_paddingLeft"
+            android:paddingStart="@dimen/payment_details_Xlarge_toolbar_layout_textView_paddingLeft"
+            android:paddingLeft="@dimen/payment_details_Xlarge_toolbar_layout_textView_paddingLeft"
             android:text="@string/payment_details"
             android:textColor="@color/black"
-            android:textSize="@dimen/mediumText"
+            android:textSize="@dimen/UltraText"
             tools:ignore="RtlSymmetry" />
 
     </LinearLayout>
@@ -51,9 +51,9 @@
 
     <LinearLayout
         android:id="@+id/payments_details_current_status"
-        android:layout_marginLeft="@dimen/payment_details_normal_payments_details_current_status_marginLeft"
-        android:layout_marginRight="@dimen/payment_details_normal_payments_details_current_status_marginLeft"
-        android:layout_marginTop="@dimen/payment_details_normal_payments_details_current_status_marginTop"
+        android:layout_marginLeft="@dimen/payment_details_Xlarge_payments_details_current_status_marginLeft"
+        android:layout_marginRight="@dimen/payment_details_Xlarge_payments_details_current_status_marginLeft"
+        android:layout_marginTop="@dimen/payment_details_Xlarge_payments_details_current_status_marginTop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/last_payment"
                 android:textColor="@color/black"
-                android:textSize="@dimen/mediumText"
+                android:textSize="@dimen/UltraText"
                 android:fontFamily="sans-serif-thin"
                 />
 
@@ -92,7 +92,7 @@
             android:layout_height="match_parent"
             android:text="@string/_21st_july_2019"
             android:textColor="@color/black"
-            android:textSize="@dimen/smallText"
+            android:textSize="@dimen/largeText"
             android:fontFamily="sans-serif"
             />
 
@@ -101,15 +101,15 @@
     <android.support.v7.widget.CardView
         android:id="@+id/payment_glance_card"
         android:layout_gravity="start"
-        app:cardCornerRadius="@dimen/payment_details_normal_cardView_cardCornerRadius"
-        android:elevation="@dimen/payment_details_normal_cardView_elevation"
-        app:contentPadding="@dimen/payment_details_normal_cardView_contentPadding"
+        app:cardCornerRadius="@dimen/payment_details_Xlarge_cardView_cardCornerRadius"
+        android:elevation="@dimen/payment_details_Xlarge_cardView_elevation"
+        app:contentPadding="@dimen/payment_details_Xlarge_cardView_contentPadding"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/payment_details_normal_cardView_layout_height"
-        android:layout_marginTop="@dimen/payment_details_normal_cardView_marginTop_Bottom"
-        android:layout_marginBottom="@dimen/payment_details_normal_cardView_marginTop_Bottom"
-        android:layout_marginLeft="@dimen/payment_details_normal_cardView_marginLeft_Right"
-        android:layout_marginStart="@dimen/payment_details_normal_cardView_marginLeft_Right"
+        android:layout_height="@dimen/payment_details_Xlarge_cardView_layout_height"
+        android:layout_marginTop="@dimen/payment_details_Xlarge_cardView_marginTop_Bottom"
+        android:layout_marginBottom="@dimen/payment_details_Xlarge_cardView_marginTop_Bottom"
+        android:layout_marginLeft="@dimen/payment_details_Xlarge_cardView_marginLeft_Right"
+        android:layout_marginStart="@dimen/payment_details_Xlarge_cardView_marginLeft_Right"
         tools:targetApi="lollipop">
 
         <LinearLayout
@@ -119,6 +119,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:textSize="@dimen/mediumText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/amount_99_inr"
@@ -126,6 +127,7 @@
                 android:fontFamily="sans-serif" />
 
             <TextView
+                android:textSize="@dimen/mediumText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/plan_gold"
@@ -133,6 +135,7 @@
                 android:fontFamily="sans-serif" />
 
             <TextView
+                android:textSize="@dimen/mediumText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/valid_till_21st_aug_2019"
@@ -140,6 +143,7 @@
                 android:fontFamily="sans-serif" />
 
             <TextView
+                android:textSize="@dimen/mediumText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/transaction_id_b56abczzc"
@@ -151,11 +155,11 @@
     </android.support.v7.widget.CardView>
 
     <LinearLayout
-        android:layout_marginLeft="@dimen/payment_details_normal_payments_details_current_status_marginLeft"
-        android:layout_marginStart="@dimen/payment_details_normal_payments_details_current_status_marginLeft"
-        android:layout_marginRight="@dimen/payment_details_normal_payments_details_current_status_marginRight"
-        android:layout_marginEnd="@dimen/payment_details_normal_payments_details_current_status_marginRight"
-        android:layout_marginTop="@dimen/payment_details_normal_cardView_marginTop_Bottom"
+        android:layout_marginLeft="@dimen/payment_details_Xlarge_payments_details_current_status_marginLeft"
+        android:layout_marginStart="@dimen/payment_details_Xlarge_payments_details_current_status_marginLeft"
+        android:layout_marginRight="@dimen/payment_details_Xlarge_payments_details_current_status_marginRight"
+        android:layout_marginEnd="@dimen/payment_details_Xlarge_payments_details_current_status_marginRight"
+        android:layout_marginTop="@dimen/payment_details_Xlarge_cardView_marginTop_Bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -169,7 +173,7 @@
             android:text="@string/payment_history"
             android:textColor="@color/black"
             android:fontFamily="sans-serif-thin"
-            android:textSize="@dimen/mediumText" />
+            android:textSize="@dimen/UltraText" />
 
         <ImageView
             android:alpha="0.7"
@@ -184,10 +188,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="@dimen/payment_details_normal_cardView_marginLeft_Right"
-        android:layout_marginLeft="@dimen/payment_details_normal_cardView_marginLeft_Right"
-        android:layout_marginEnd="@dimen/payment_details_normal_cardView_marginLeft_Right"
-        android:layout_marginTop="@dimen/payment_details_normal_cardView_marginTop_Bottom"
+        android:layout_marginStart="@dimen/payment_details_Xlarge_cardView_marginLeft_Right"
+        android:layout_marginLeft="@dimen/payment_details_Xlarge_cardView_marginLeft_Right"
+        android:layout_marginEnd="@dimen/payment_details_Xlarge_cardView_marginLeft_Right"
+        android:layout_marginTop="@dimen/payment_details_Xlarge_cardView_marginTop_Bottom"
         >
 
         <android.support.v7.widget.RecyclerView

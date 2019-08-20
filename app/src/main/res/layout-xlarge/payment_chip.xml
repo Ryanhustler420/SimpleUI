@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/payment_card_chip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:cardElevation="0dp"
+        tools:targetApi="lollipop">
+
+        <RelativeLayout
+            android:background="@drawable/payment_card_chip_bottom_border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/payment_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/payment_chip_Xlarge_layout_album_title_padding"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/largeText"
+                android:text="@string/app_name"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:textSize="@dimen/mediumText"
+                android:id="@+id/payment_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/payment_date"
+                android:paddingBottom="@dimen/payment_chip_Xlarge_layout_album_title_padding"
+                android:text="@string/app_name"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
