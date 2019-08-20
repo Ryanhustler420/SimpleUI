@@ -52,6 +52,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:paddingLeft="12dp"
+                android:paddingStart="12dp"
                 android:fontFamily="sans-serif-thin"
                 android:gravity="center_vertical"
                 android:text="@string/app_name"

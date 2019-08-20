@@ -114,6 +114,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onResume() {
         super.onResume();
+        if(mDrawer.isDrawerOpen(Gravity.START)){
+            mDrawer.closeDrawer(Gravity.START);
+        }
         isAboutToMoveAnotherActivity = false;
     }
 
@@ -137,13 +140,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if(!isAboutToMoveAnotherActivity){
             switch (item.getItemId()) {
                 case R.id.settings: {
-                    Toast.makeText(getApplicationContext(), "Setting", Toast.LENGTH_LONG).show();
-                    isAboutToMoveAnotherActivity = false;
+                    startActivity(new Intent(MainActivity.this, Settings.class));
+                    overridePendingTransition(R.anim.enter, R.anim.exit);
+                    isAboutToMoveAnotherActivity = true;
                     break;
                 }case R.id.payments_details: {
                     startActivity(new Intent(MainActivity.this, Payment_details.class));
                     overridePendingTransition(R.anim.enter, R.anim.exit);
-                    isAboutToMoveAnotherActivity = false;
+                    isAboutToMoveAnotherActivity = true;
                     break;
                 }case R.id.about: {
                     startActivity(new Intent(MainActivity.this, About.class));
@@ -152,13 +156,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     break;
                 }case R.id.logout: {
                     Toast.makeText(getApplicationContext(), "Logout", Toast.LENGTH_LONG).show();
+                    mDrawer.closeDrawer(Gravity.START);
                     isAboutToMoveAnotherActivity = false;
                     break;
                 }
             }
         }
-        //close navigation drawer
-//        mDrawer.closeDrawer(Gravity.START);
         return true;
     }
 

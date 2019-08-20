@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Settings">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/payment_details_normal_toolbar_height"
+        android:layout_marginTop="@dimen/payment_details_normal_toolbar_layout_margin"
+        android:layout_marginEnd="@dimen/payment_details_normal_toolbar_layout_margin"
+        android:layout_marginRight="@dimen/payment_details_normal_toolbar_layout_margin"
+        android:layout_marginBottom="@dimen/payment_details_normal_toolbar_layout_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/settings_back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_back"
+            android:gravity="center_horizontal|center_vertical" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/settings"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mediumText"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+</LinearLayout>
