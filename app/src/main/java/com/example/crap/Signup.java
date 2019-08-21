@@ -39,7 +39,7 @@ public class Signup extends AppCompatActivity {
 
     }
 
-    public void setSpinnerData(Spinner spinner, final String[] data, DataType type) {
+    public void setSpinnerData(Spinner spinner, final String[] data, final DataType type) {
         ArrayAdapter<String> adaptor = new ArrayAdapter<>(Signup.this, android.R.layout.simple_spinner_dropdown_item, data);
         adaptor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adaptor);
@@ -48,6 +48,15 @@ public class Signup extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 // TODO: set value to form object later
                 // Toast.makeText(getApplicationContext(), data[i], Toast.LENGTH_SHORT).show();
+                switch (type) {
+                    case COUNTRY:
+                            stateSpinner.setSelection(0);
+                            citySpinner.setSelection(0);
+                        break;
+                    case STATE:
+                            citySpinner.setSelection(0);
+                        break;
+                }
             }
 
             @Override
