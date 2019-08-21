@@ -10,22 +10,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Settings"
-            android:screenOrientation="portrait" />
+        <!--TODO: signup yet to implement all screen size layout-->
+        <!--<activity-->
+            <!--android:name=".Signup"-->
+            <!--android:screenOrientation="portrait" />-->
+        <!--&lt;!&ndash;TODO: settings yet to implement all screen size layout&ndash;&gt;-->
+        <!--<activity-->
+            <!--android:name=".Settings"-->
+            <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+            <!--android:name=".Payment_details"-->
+            <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+            <!--android:name=".About"-->
+            <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+            <!--android:name=".MainActivity"-->
+            <!--android:screenOrientation="portrait" />-->
+        <!--<activity-->
+            <!--android:name=".utils.IntoActivity"-->
+            <!--android:screenOrientation="portrait" />-->
         <activity
-            android:name=".Payment_details"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".About"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".utils.IntoActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".utils.SplashScreen"
+            android:name=".Signup"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>

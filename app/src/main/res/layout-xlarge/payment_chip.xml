@@ -16,7 +16,7 @@
         tools:targetApi="lollipop">
 
         <RelativeLayout
-            android:background="@drawable/payment_card_chip_bottom_border"
+            android:background="@drawable/bottom_border_line"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
