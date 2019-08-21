@@ -14,19 +14,19 @@
         android:id="@+id/sign_up_heading_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/sign_up_normal_layout_padding"
+        android:padding="@dimen/sign_up_Xlarge_layout_padding"
         android:gravity="center_horizontal|center_vertical"
         android:background="@drawable/bottom_border_line"
         android:text="@string/sign_up"
-        android:textSize="@dimen/largeText" />
+        android:textSize="@dimen/UltraText" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:paddingTop="@dimen/sign_up_normal_layout_padding"
-            android:paddingBottom="@dimen/sign_up_normal_layout_padding"
+            android:paddingTop="@dimen/sign_up_Xlarge_layout_padding"
+            android:paddingBottom="@dimen/sign_up_Xlarge_layout_padding"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -36,20 +36,20 @@
                 android:id="@+id/sign_up_photo_picker_box"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/sign_up_normal_layout_margin"
+                android:layout_margin="@dimen/sign_up_Xlarge_layout_margin"
                 tools:ignore="UseCompoundDrawables">
 
                 <TextView
-                    android:layout_marginStart="@dimen/sign_up_normal_inner_layout_margin"
-                    android:layout_marginLeft="@dimen/sign_up_normal_inner_layout_margin"
-                    android:layout_marginEnd="@dimen/sign_up_normal_inner_layout_margin"
-                    android:layout_marginRight="@dimen/sign_up_normal_inner_layout_margin"
+                    android:layout_marginStart="@dimen/sign_up_Xlarge_inner_layout_margin"
+                    android:layout_marginLeft="@dimen/sign_up_Xlarge_inner_layout_margin"
+                    android:layout_marginEnd="@dimen/sign_up_Xlarge_inner_layout_margin"
+                    android:layout_marginRight="@dimen/sign_up_Xlarge_inner_layout_margin"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="@string/profile_photo"
-                    android:textSize="@dimen/largeText" />
+                    android:textSize="@dimen/UltraText" />
 
                 <ImageView
                     android:scaleType="fitXY"
@@ -58,9 +58,9 @@
                     android:layout_marginEnd="@dimen/sign_up_normal_inner_layout_margin"
                     android:layout_marginRight="@dimen/sign_up_normal_inner_layout_margin"
                     android:id="@+id/sign_up_profile_pic"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="right"
                     android:contentDescription="@string/app_name"
                     android:src="@drawable/ic_image_picker" />
 
@@ -70,17 +70,17 @@
                 android:id="@+id/sign_up_form_heading_text_box"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/sign_up_normal_layout_margin">
+                android:layout_margin="@dimen/sign_up_Xlarge_layout_margin">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="@dimen/sign_up_normal_inner_layout_margin"
-                    android:layout_marginLeft="@dimen/sign_up_normal_inner_layout_margin"
-                    android:layout_marginEnd="@dimen/sign_up_normal_inner_layout_margin"
-                    android:layout_marginRight="@dimen/sign_up_normal_inner_layout_margin"
+                    android:layout_marginStart="@dimen/sign_up_Xlarge_inner_layout_margin"
+                    android:layout_marginLeft="@dimen/sign_up_Xlarge_inner_layout_margin"
+                    android:layout_marginEnd="@dimen/sign_up_Xlarge_inner_layout_margin"
+                    android:layout_marginRight="@dimen/sign_up_Xlarge_inner_layout_margin"
                     android:text="@string/basic_information"
-                    android:textSize="@dimen/smallText"
+                    android:textSize="@dimen/UltraText"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -92,7 +92,7 @@
                 android:id="@+id/sign_up_form"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/sign_up_normal_layout_margin">
+                android:layout_margin="@dimen/sign_up_Xlarge_layout_margin">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -102,35 +102,34 @@
                     <LinearLayout
                         android:id="@+id/sign_up_form_name_age_box"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/sign_up_normal_linear_row_height"
-                        android:layout_marginLeft="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginStart="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginEnd="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginRight="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginTop="@dimen/sign_up_normal_layout_margin"
-                        android:weightSum="@integer/sign_up_normal_linear_row_layout_weight">
+                        android:layout_height="@dimen/sign_up_Xlarge_linear_row_height"
+                        android:layout_marginLeft="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginStart="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginEnd="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginRight="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginTop="@dimen/sign_up_Xlarge_layout_margin"
+                        android:weightSum="@integer/sign_up_Xlarge_linear_row_layout_weight">
 
                         <EditText
-                            android:textSize="@dimen/defaultText"
+                            android:textSize="@dimen/mediumText"
                             android:id="@+id/sign_up_name_et"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_input_type_one_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_input_type_one_layout_weight"
                             android:background="@drawable/rounded_border_edit_text"
                             android:hint="@string/name"
                             android:inputType="textPersonName">
 
-                            <!--<requestFocus />-->
                         </EditText>
 
                         <EditText
-                            android:textSize="@dimen/defaultText"
+                            android:textSize="@dimen/mediumText"
                             android:id="@+id/sign_up_age_et"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_marginStart="@dimen/sign_up_normal_input_leftMargin"
-                            android:layout_marginLeft="@dimen/sign_up_normal_input_leftMargin"
-                            android:layout_weight="@integer/sign_up_normal_input_type_two_layout_weight"
+                            android:layout_marginStart="@dimen/sign_up_Xlarge_input_leftMargin"
+                            android:layout_marginLeft="@dimen/sign_up_Xlarge_input_leftMargin"
+                            android:layout_weight="@integer/sign_up_Xlarge_input_type_two_layout_weight"
                             android:background="@drawable/rounded_border_edit_text"
                             android:hint="@string/age"
                             android:maxLength="2"
@@ -141,19 +140,20 @@
                     <LinearLayout
                         android:id="@+id/sign_up_form_gender_box"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/sign_up_normal_linear_row_height"
+                        android:layout_height="@dimen/sign_up_Xlarge_linear_row_height"
                         android:layout_below="@+id/sign_up_form_name_age_box"
-                        android:layout_marginLeft="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginStart="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginEnd="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginRight="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginTop="@dimen/sign_up_normal_layout_margin"
-                        android:weightSum="@integer/sign_up_normal_linear_row_layout_weight">
+                        android:layout_marginLeft="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginStart="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginEnd="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginRight="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginTop="@dimen/sign_up_Xlarge_layout_margin"
+                        android:weightSum="@integer/sign_up_Xlarge_linear_row_layout_weight">
 
                         <TextView
+                            android:textSize="@dimen/mediumText"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_left_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_left_layout_weight"
                             android:gravity="start|center"
                             android:text="@string/gender" />
 
@@ -162,19 +162,21 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_gravity="end"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_right_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_right_layout_weight"
                             android:orientation="horizontal"
                             tools:ignore="RtlSymmetry">
 
                             <android.support.v7.widget.AppCompatRadioButton
-                                app:buttonTint="@color/black"
+                                android:textSize="@dimen/mediumText"
                                 android:id="@+id/male"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                android:text="@string/male" />
+                                android:text="@string/male"
+                                app:buttonTint="@color/black" />
 
                             <RadioButton
+                                android:textSize="@dimen/mediumText"
                                 app:buttonTint="@color/black"
                                 android:id="@+id/female"
                                 android:layout_width="wrap_content"
@@ -183,6 +185,7 @@
                                 android:text="@string/female" />
 
                             <RadioButton
+                                android:textSize="@dimen/mediumText"
                                 app:buttonTint="@color/black"
                                 android:id="@+id/others"
                                 android:layout_width="wrap_content"
@@ -198,28 +201,29 @@
                     <LinearLayout
                         android:id="@+id/sign_up_form_address_box"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/sign_up_normal_linear_row_height"
+                        android:layout_height="@dimen/sign_up_Xlarge_linear_row_height"
                         android:layout_below="@+id/sign_up_form_gender_box"
-                        android:layout_marginLeft="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginStart="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginEnd="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginRight="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginTop="@dimen/sign_up_normal_layout_margin"
-                        android:weightSum="@integer/sign_up_normal_linear_row_layout_weight">
+                        android:layout_marginLeft="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginStart="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginEnd="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginRight="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginTop="@dimen/sign_up_Xlarge_layout_margin"
+                        android:weightSum="@integer/sign_up_Xlarge_linear_row_layout_weight">
 
                         <TextView
+                            android:textSize="@dimen/mediumText"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_left_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_left_layout_weight"
                             android:gravity="center|start"
                             android:text="@string/addressTxt" />
 
                         <EditText
-                            android:textSize="@dimen/defaultText"
+                            android:textSize="@dimen/mediumText"
                             android:id="@+id/sign_up_address_et"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_right_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_right_layout_weight"
                             android:background="@drawable/rounded_border_edit_text"
                             android:hint="@string/address_hint"
                             android:inputType="textPostalAddress">
@@ -231,28 +235,29 @@
                     <LinearLayout
                         android:id="@+id/sign_up_form_phone_box"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/sign_up_normal_linear_row_height"
+                        android:layout_height="@dimen/sign_up_Xlarge_linear_row_height"
                         android:layout_below="@+id/sign_up_form_address_box"
-                        android:layout_marginLeft="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginStart="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginEnd="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginRight="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginTop="@dimen/sign_up_normal_layout_margin"
-                        android:weightSum="@integer/sign_up_normal_linear_row_layout_weight">
+                        android:layout_marginLeft="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginStart="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginEnd="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginRight="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginTop="@dimen/sign_up_Xlarge_layout_margin"
+                        android:weightSum="@integer/sign_up_Xlarge_linear_row_layout_weight">
 
                         <TextView
+                            android:textSize="@dimen/mediumText"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_left_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_left_layout_weight"
                             android:gravity="center|start"
                             android:text="@string/phone" />
 
                         <EditText
-                            android:textSize="@dimen/defaultText"
+                            android:textSize="@dimen/mediumText"
                             android:id="@+id/sign_up_form_phone_et"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_right_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_right_layout_weight"
                             android:background="@drawable/rounded_border_edit_text"
                             android:hint="@string/_91987654321"
                             android:inputType="phone">
@@ -264,28 +269,29 @@
                     <LinearLayout
                         android:id="@+id/sign_up_form_email_box"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/sign_up_normal_linear_row_height"
+                        android:layout_height="@dimen/sign_up_Xlarge_linear_row_height"
                         android:layout_below="@+id/sign_up_form_phone_box"
-                        android:layout_marginLeft="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginStart="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginEnd="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginRight="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginTop="@dimen/sign_up_normal_layout_margin"
-                        android:weightSum="@integer/sign_up_normal_linear_row_layout_weight">
+                        android:layout_marginLeft="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginStart="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginEnd="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginRight="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginTop="@dimen/sign_up_Xlarge_layout_margin"
+                        android:weightSum="@integer/sign_up_Xlarge_linear_row_layout_weight">
 
                         <TextView
+                            android:textSize="@dimen/mediumText"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_left_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_left_layout_weight"
                             android:gravity="center|start"
                             android:text="@string/email" />
 
                         <EditText
-                            android:textSize="@dimen/defaultText"
+                            android:textSize="@dimen/mediumText"
                             android:id="@+id/sign_up_form_email_et"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_right_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_right_layout_weight"
                             android:background="@drawable/rounded_border_edit_text"
                             android:hint="@string/your_email"
                             android:inputType="textWebEmailAddress">
@@ -297,28 +303,28 @@
                     <LinearLayout
                         android:id="@+id/sign_up_form_password_box"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/sign_up_normal_linear_row_height"
+                        android:layout_height="@dimen/sign_up_Xlarge_linear_row_height"
                         android:layout_below="@+id/sign_up_form_email_box"
-                        android:layout_marginLeft="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginStart="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginEnd="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginRight="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginTop="@dimen/sign_up_normal_layout_margin"
-                        android:weightSum="@integer/sign_up_normal_linear_row_layout_weight">
+                        android:layout_marginLeft="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginStart="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginEnd="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginRight="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginTop="@dimen/sign_up_Xlarge_layout_margin"
+                        android:weightSum="@integer/sign_up_Xlarge_linear_row_layout_weight">
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_left_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_left_layout_weight"
                             android:gravity="center|start"
                             android:text="@string/password" />
 
                         <EditText
-                            android:textSize="@dimen/defaultText"
+                            android:textSize="@dimen/mediumText"
                             android:id="@+id/sign_up_form_password_et"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_right_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_right_layout_weight"
                             android:background="@drawable/rounded_border_edit_text"
                             android:hint="@string/password"
                             android:inputType="textPassword">
@@ -330,28 +336,28 @@
                     <LinearLayout
                         android:id="@+id/sign_up_form_country_box"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/sign_up_normal_linear_row_height"
+                        android:layout_height="@dimen/sign_up_Xlarge_linear_row_height"
                         android:layout_below="@+id/sign_up_form_password_box"
-                        android:layout_marginLeft="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginStart="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginEnd="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginRight="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginTop="@dimen/sign_up_normal_layout_margin"
-                        android:weightSum="@integer/sign_up_normal_linear_row_layout_weight">
+                        android:layout_marginLeft="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginStart="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginEnd="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginRight="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginTop="@dimen/sign_up_Xlarge_layout_margin"
+                        android:weightSum="@integer/sign_up_Xlarge_linear_row_layout_weight">
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_left_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_left_layout_weight"
                             android:gravity="center|start"
                             android:text="@string/country" />
 
                         <Spinner
-                            android:textSize="@dimen/defaultText"
+                            android:textSize="@dimen/mediumText"
                             android:id="@+id/sign_up_form_country_spinner"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_right_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_right_layout_weight"
                             android:background="@drawable/rounded_border_spinner_background">
 
                         </Spinner>
@@ -361,28 +367,28 @@
                     <LinearLayout
                         android:id="@+id/sign_up_form_state_box"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/sign_up_normal_linear_row_height"
+                        android:layout_height="@dimen/sign_up_Xlarge_linear_row_height"
                         android:layout_below="@+id/sign_up_form_country_box"
-                        android:layout_marginLeft="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginStart="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginEnd="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginRight="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginTop="@dimen/sign_up_normal_layout_margin"
-                        android:weightSum="@integer/sign_up_normal_linear_row_layout_weight">
+                        android:layout_marginLeft="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginStart="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginEnd="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginRight="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginTop="@dimen/sign_up_Xlarge_layout_margin"
+                        android:weightSum="@integer/sign_up_Xlarge_linear_row_layout_weight">
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_left_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_left_layout_weight"
                             android:gravity="center|start"
                             android:text="@string/state" />
 
                         <Spinner
-                            android:textSize="@dimen/defaultText"
+                            android:textSize="@dimen/mediumText"
                             android:id="@+id/sign_up_form_state_spinner"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_right_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_right_layout_weight"
                             android:background="@drawable/rounded_border_spinner_background">
 
                         </Spinner>
@@ -392,28 +398,28 @@
                     <LinearLayout
                         android:id="@+id/sign_up_form_city_box"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/sign_up_normal_linear_row_height"
+                        android:layout_height="@dimen/sign_up_Xlarge_linear_row_height"
                         android:layout_below="@+id/sign_up_form_state_box"
-                        android:layout_marginLeft="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginStart="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginEnd="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginRight="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginTop="@dimen/sign_up_normal_layout_margin"
-                        android:weightSum="@integer/sign_up_normal_linear_row_layout_weight">
+                        android:layout_marginLeft="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginStart="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginEnd="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginRight="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginTop="@dimen/sign_up_Xlarge_layout_margin"
+                        android:weightSum="@integer/sign_up_Xlarge_linear_row_layout_weight">
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_left_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_left_layout_weight"
                             android:gravity="center|start"
                             android:text="@string/city" />
 
                         <Spinner
-                            android:textSize="@dimen/defaultText"
+                            android:textSize="@dimen/mediumText"
                             android:id="@+id/sign_up_form_city_spinner"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_right_layout_weight"
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_right_layout_weight"
                             android:background="@drawable/rounded_border_spinner_background">
 
                         </Spinner>
@@ -423,14 +429,14 @@
                     <LinearLayout
                         android:id="@+id/sign_up_form_preference_box"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/sign_up_normal_linear_row_height"
+                        android:layout_height="@dimen/sign_up_Xlarge_linear_row_height"
                         android:layout_below="@+id/sign_up_form_city_box"
-                        android:layout_marginLeft="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginStart="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginEnd="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginRight="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginTop="@dimen/sign_up_normal_layout_margin"
-                        android:weightSum="@integer/sign_up_normal_linear_row_layout_weight">
+                        android:layout_marginLeft="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginStart="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginEnd="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginRight="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginTop="@dimen/sign_up_Xlarge_layout_margin"
+                        android:weightSum="@integer/sign_up_Xlarge_linear_row_layout_weight">
 
                         <!-- TODO: change here weight manually -->
                         <TextView
@@ -444,22 +450,22 @@
                             android:orientation="horizontal"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="@integer/sign_up_normal_linear_row_right_layout_weight">
+                            android:layout_weight="@integer/sign_up_Xlarge_linear_row_right_layout_weight">
 
                             <android.support.v7.widget.AppCompatCheckBox
                                 android:id="@+id/sign_up_form_preference_car"
-                                android:paddingEnd="1dp"
-                                android:paddingRight="1dp"
-                                android:paddingStart="1dp"
+                                android:paddingEnd="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingStart="10dp"
                                 android:text="@string/car"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 app:buttonTint="@color/black" />
 
                             <android.support.v7.widget.AppCompatCheckBox
-                                android:paddingRight="1dp"
-                                android:paddingEnd="1dp"
-                                android:paddingStart="1dp"
+                                android:paddingEnd="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingStart="10dp"
                                 android:id="@+id/sign_up_form_preference_auto"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
@@ -467,9 +473,9 @@
                                 android:text="@string/auto" />
 
                             <android.support.v7.widget.AppCompatCheckBox
-                                android:paddingRight="1dp"
-                                android:paddingEnd="1dp"
-                                android:paddingStart="1dp"
+                                android:paddingEnd="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingStart="10dp"
                                 android:id="@+id/sign_up_form_preference_others"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
@@ -484,13 +490,13 @@
                     <LinearLayout
                         android:id="@+id/sign_up_form_TC_box"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/sign_up_normal_linear_row_height"
+                        android:layout_height="@dimen/sign_up_Xlarge_linear_row_height"
                         android:layout_below="@+id/sign_up_form_preference_box"
-                        android:layout_marginLeft="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginStart="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginEnd="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginRight="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginTop="@dimen/sign_up_normal_layout_margin">
+                        android:layout_marginLeft="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginStart="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginEnd="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginRight="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginTop="@dimen/sign_up_Xlarge_layout_margin">
 
                         <android.support.v7.widget.AppCompatCheckBox
                             android:id="@+id/sign_up_form_TC_checkbox"
@@ -513,28 +519,28 @@
                     <RelativeLayout
                         android:id="@+id/sign_up_form_action_btn_box"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="@dimen/sign_up_Xlarge_linear_row_height"
                         android:layout_below="@+id/sign_up_form_TC_box"
-                        android:layout_marginLeft="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginStart="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginEnd="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginRight="@dimen/sign_up_normal_inner_layout_margin"
-                        android:layout_marginTop="@dimen/sign_up_normal_layout_margin"
+                        android:layout_marginLeft="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginStart="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginEnd="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginRight="@dimen/sign_up_Xlarge_inner_layout_margin"
+                        android:layout_marginTop="@dimen/sign_up_Xlarge_layout_margin"
                         android:gravity="end">
 
                         <Button
                             android:id="@+id/sign_up_form_next_btn"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_alignParentTop="true"
                             android:layout_alignParentEnd="true"
                             android:layout_alignParentRight="true"
                             android:layout_alignParentBottom="true"
-                            android:layout_marginLeft="@dimen/sign_up_normal_inner_layout_margin"
-                            android:layout_marginStart="@dimen/sign_up_normal_inner_layout_margin"
-                            android:layout_marginEnd="@dimen/sign_up_normal_inner_layout_margin"
-                            android:layout_marginRight="@dimen/sign_up_normal_inner_layout_margin"
-                            android:layout_marginTop="@dimen/sign_up_normal_layout_margin"
+                            android:layout_marginLeft="@dimen/sign_up_Xlarge_inner_layout_margin"
+                            android:layout_marginStart="@dimen/sign_up_Xlarge_inner_layout_margin"
+                            android:layout_marginEnd="@dimen/sign_up_Xlarge_inner_layout_margin"
+                            android:layout_marginRight="@dimen/sign_up_Xlarge_inner_layout_margin"
+                            android:layout_marginTop="@dimen/sign_up_Xlarge_layout_margin"
                             android:background="@drawable/bottom_border_line"
                             android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
                             android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
