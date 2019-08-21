@@ -8,6 +8,7 @@
 
     <dimen name="iconSize">30dp</dimen>
 
+    <dimen name="defaultText">14sp</dimen>
     <dimen name="smallText">18sp</dimen>
     <dimen name="mediumText">24sp</dimen>
     <dimen name="largeText">30sp</dimen>
@@ -260,6 +261,22 @@
             <dimen name="payment_details_Xlarge_cardView_marginTop_Bottom">20dp</dimen>
             <dimen name="payment_details_Xlarge_cardView_marginLeft_Right">75dp</dimen>
 
+
+    <!-- Sign up Activity   -->
+        <!-- Small 2.7" Port Land Q_B_G_A -->
+                <!-- dimes here for small wearable gadget device -->
+
+        <!-- Normal Port Pixel 2 -->
+                <dimen name="sign_up_normal_layout_padding">8dp</dimen>
+                <dimen name="sign_up_normal_layout_margin">8dp</dimen>
+                <dimen name="sign_up_normal_inner_layout_margin">16dp</dimen>
+                <integer name="sign_up_normal_input_type_two_layout_weight">3</integer>
+                <integer name="sign_up_normal_input_type_one_layout_weight">7</integer>
+                <dimen name="sign_up_normal_input_leftMargin">10dp</dimen>
+                <dimen name="sign_up_normal_linear_row_height">40dp</dimen>
+                <integer name="sign_up_normal_linear_row_layout_weight">10</integer>
+                <integer name="sign_up_normal_linear_row_left_layout_weight">2</integer>
+                <integer name="sign_up_normal_linear_row_right_layout_weight">8</integer>
 
 
 

@@ -46,5 +46,5 @@
     <string name="auto">Auto</string>
     <string name="car">Car</string>
     <string name="others">Others</string>
-    <string name="tc"><![CDATA[I agree to all Terms & Conditions.]]></string>
+    <string name="tc"><![CDATA[I agree to all Terms & Conditions. (Read More)]]></string>
 </resources>
