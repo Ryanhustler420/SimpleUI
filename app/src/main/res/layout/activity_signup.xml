@@ -111,6 +111,7 @@
                         android:weightSum="@integer/sign_up_normal_linear_row_layout_weight">
 
                         <EditText
+                            android:theme="@style/MyEditText"
                             android:textSize="@dimen/defaultText"
                             android:id="@+id/sign_up_name_et"
                             android:layout_width="0dp"
@@ -124,6 +125,7 @@
                         </EditText>
 
                         <EditText
+                            android:theme="@style/MyEditText"
                             android:textSize="@dimen/defaultText"
                             android:id="@+id/sign_up_age_et"
                             android:layout_width="0dp"
@@ -215,6 +217,7 @@
                             android:text="@string/addressTxt" />
 
                         <EditText
+                            android:theme="@style/MyEditText"
                             android:textSize="@dimen/defaultText"
                             android:id="@+id/sign_up_address_et"
                             android:layout_width="0dp"
@@ -248,6 +251,7 @@
                             android:text="@string/phone" />
 
                         <EditText
+                            android:theme="@style/MyEditText"
                             android:textSize="@dimen/defaultText"
                             android:id="@+id/sign_up_form_phone_et"
                             android:layout_width="0dp"
@@ -281,6 +285,7 @@
                             android:text="@string/email" />
 
                         <EditText
+                            android:theme="@style/MyEditText"
                             android:textSize="@dimen/defaultText"
                             android:id="@+id/sign_up_form_email_et"
                             android:layout_width="0dp"
@@ -314,6 +319,7 @@
                             android:text="@string/password" />
 
                         <EditText
+                            android:theme="@style/MyEditText"
                             android:textSize="@dimen/defaultText"
                             android:id="@+id/sign_up_form_password_et"
                             android:layout_width="0dp"
@@ -523,6 +529,7 @@
                         android:gravity="end">
 
                         <Button
+                            android:textSize="@dimen/smallText"
                             android:id="@+id/sign_up_form_next_btn"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
