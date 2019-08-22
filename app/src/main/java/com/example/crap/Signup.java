@@ -1,12 +1,15 @@
 package com.example.crap;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
@@ -15,10 +18,14 @@ enum DataType { CITY, STATE, COUNTRY }
 
 public class Signup extends AppCompatActivity {
 
+    static String COUNTRY = "Select Country";
+    static String STATE = "Select State";
+    static String CITY = "Select City";
+
     Spinner countrySpinner, stateSpinner, citySpinner;
-    private static final String[] country = {"Select Country", "India", "Pakistan", "USA", "China", "Japan"};
-    private static final String[] states = {"Select State", "Jharkhand", "Delhi", "Banglore", "Mumbai", "Bihar", "Panjab"};
-    private static final String[] cities = {"Select City", "Jamshedpur", "Ranchi", "Dhanbad", "Bokaro", "Hazaribhag"};
+    private static final String[] country = { COUNTRY , "India", "Pakistan", "USA", "China", "Japan"};
+    private static final String[] states = { STATE , "Jharkhand", "Delhi", "Banglore", "Mumbai", "Bihar", "Panjab"};
+    private static final String[] cities = { CITY , "Jamshedpur", "Ranchi", "Dhanbad", "Bokaro", "Hazaribhag"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,12 +55,28 @@ public class Signup extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 // TODO: set value to form object later
                 // Toast.makeText(getApplicationContext(), data[i], Toast.LENGTH_SHORT).show();
+                String currentCountrySelected = countrySpinner.getSelectedItem().toString();
+                String currentStateSelected = stateSpinner.getSelectedItem().toString();
                 switch (type) {
                     case COUNTRY:
                             stateSpinner.setSelection(0);
                             citySpinner.setSelection(0);
+                            if(currentCountrySelected.equals(COUNTRY)) {
+                                stateSpinner.setEnabled(false);
+                            }
+                            if(!currentCountrySelected.equals(COUNTRY)) {
+                                stateSpinner.setEnabled(true);
+                            }
+                            citySpinner.setEnabled(false);
                         break;
                     case STATE:
+                        if(currentStateSelected.equals(STATE)) {
+                            citySpinner.setEnabled(false);
+                        }
+
+                        if(!currentStateSelected.equals(STATE)) {
+                            citySpinner.setEnabled(true);
+                        }
                             citySpinner.setSelection(0);
                         break;
                 }
